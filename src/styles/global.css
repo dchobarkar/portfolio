@@ -1,0 +1,226 @@
+@tailwind base;
+
+html,
+body {
+  @apply bg-base-200 font-sans font-normal w-full h-full m-0 p-0 box-border;
+  font-size: 16px;
+	font-feature-settings: 'ss02', 'ss01', 'kern', 'liga', 'clig', 'calt';
+  font-kerning: normal;
+  text-rendering: optimizelegibility;
+  backface-visibility: hidden;
+  overflow-x: hidden;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	@apply text-white text-opacity-80 no-underline border-none transition-all duration-300 ease-in-out cursor-pointer;
+	&:hover,
+  &:focus,
+	&.active a {
+		@apply text-accent;
+	}
+  &::focus:not(:focus-visible) {
+    @apply outline-none;
+  }
+}
+
+button::focus:not(:focus-visible) {
+	@apply outline-none;
+}
+
+@tailwind components;
+
+#___gatsby,
+#___gatsby > div {
+  height: 100% !important;
+}
+#___gatsby .tl-edges,
+#___gatsby .tl-wrapper {
+  height: 100vh !important;
+}
+
+.gradient-text-green {
+  position: relative;
+  background: linear-gradient(to right, $cube_green, $cube_blue 50%, rgba(255,255,255,0.8) 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  background-clip: text;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  transition: background-position 250ms ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:hover,
+  &:focus {
+      background-position: 0 50%;
+  }
+}
+
+.gradient-text-red {
+  position: relative;
+  background: linear-gradient(to right, $cube_orange, $cube_red 50%, rgba(255,255,255,0.8) 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  background-clip: text;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  transition: background-position 250ms ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:hover,
+  &:focus {
+      background-position: 0 50%;
+  }
+}
+
+.gradient-text-blue {
+  position: relative;
+  background: linear-gradient(to right, DeepSkyBlue, SlateBlue 50%, rgba(255,255,255,0.8) 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  background-clip: text;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  transition: background-position 250ms ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:hover,
+  &:focus {
+      background-position: 0 50%;
+  }
+}
+
+.gradient-text-blue-dark {
+  position: relative;
+  background: linear-gradient(to right, DeepSkyBlue, SlateBlue 50%, rgba(53,59,69,0.9) 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  background-clip: text;
+  color: rgba(53,59,69,0.9);
+  text-decoration: none;
+  transition: background-position 250ms ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:hover,
+  &:focus,
+  &:focus-within {
+      background-position: 0 50%;
+  }
+}
+
+.accent,
+.accent-text {
+  @apply text-accent;
+}
+
+.accent-dot {
+  font-size: 1.1em;
+  line-height: 0.7;
+}
+
+svg.logo {
+  position: absolute;
+  width: 1.35rem;
+  height: auto;
+  overflow: visible !important;
+  path {
+    fill: none;
+    stroke: rgba(255,255,255,0.95);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 15px;
+    box-shadow: -5px -5px 5px #000;
+    filter: url(#dropshadow);
+    overflow: visible;
+    animation-iteration-count: 20;
+    animation-delay: 250ms;
+  }
+  .sPath {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation-delay: 1750ms;
+    animation: dash 4s linear forwards 500ms;
+  }
+}
+
+.typed-cursor {
+  font-size: 1.65rem;
+  vertical-align: top;
+  margin-left: 1px;
+}
+
+/* Title Cubes */
+.cube {
+  left: -10px;
+  top: 10px;
+  transform-style: preserve-3D;
+  animation: flipY 5.2s infinite;
+  .cube-side {
+    transform: rotatex(90deg) translate3d(0, 0, 18px);
+    transform-style: preserve-3D;
+    border-image: linear-gradient(to top, $cube_red, $cube_orange) 1 3%;
+    border: 2px solid $cube_red;
+    border-top-color: $cube_orange;
+    backface-visibility: hidden;
+    &.cube-side-top {
+      border-top-width: 4px;
+      border-right-width: 4px;
+      animation: border-top 5.2s infinite;
+      animation-fill-mode: forwards;
+      border-image: none;
+      border-color: $cube_orange;
+    }
+    &.cube-side-bottom {
+      border-image: none;
+      border-color: $cube_orange;
+    }
+    &.cube-side-left {
+      border-left-width: 4px;
+      border-bottom-width: 4px;
+      animation: border-left 5.2s infinite;
+      animation-fill-mode: forwards;
+      border-image: linear-gradient(to top, $cube_red, $cube_orange) 1 3%;
+      transform: rotateY(-90deg) translate3d(0, 0, 18px);
+    }
+    &.cube-side-right {
+      border-image: linear-gradient(to top, $cube_red, $cube_orange) 1 3%;
+      transform: rotateY(90deg) translate3d(0, 0, 18px);
+    }
+    &.cube-side-front {
+      border-right-width: 4px;
+      border-bottom-width: 4px;
+      border-image: linear-gradient(to top, $cube_red, $cube_orange) 1 3%;
+      animation: border-front 5.2s infinite;
+      animation-fill-mode: forwards;
+      transform: translate3d(0, 0, 18px);
+    }
+    &.cube-side-back {
+      border-image: linear-gradient(to top, $cube_red, $cube_orange) 1 3%;
+      animation: border-back 5.2s infinite;
+      animation-fill-mode: forwards;
+      transform: rotateY(180deg) translate3d(0, 0, 18px);
+    }
+  }
+  &.cube-blue .cube-side {
+    border-image: linear-gradient(to top, $cube_blue, $cube_green) 1 3%;
+    border-top-color: $cube_green;
+    &.cube-side-top,
+    &.cube-side-bottom {
+      border-image: none;
+      border-color: $cube_green;
+    }
+  }
+  &.cube-purple .cube-side {
+    border-image: linear-gradient(to top, $cube_purple, $cube_blue) 1 3%;
+    &.cube-side-top,
+    &.cube-side-bottom {
+      border-image: none;
+      border-color: $cube_blue;
+    }
+  }
+}
+
+@tailwind utilities;

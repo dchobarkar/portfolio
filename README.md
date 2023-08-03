@@ -1,49 +1,44 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+<p align="right">
+  <a href="https://circleci.com/gh/LekoArts/gatsby-starter-portfolio-cara"><img src="https://circleci.com/gh/LekoArts/gatsby-starter-portfolio-cara.svg?style=svg" alt="CircleCI"/></a>
+  <a href="https://app.netlify.com/sites/brettstevenson/deploys"><img src="https://api.netlify.com/api/v1/badges/64741f43-3afe-4692-b65f-b6c258333519/deploy-status" alt="Netlify Status"/></a>
 </p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
 
-## 🚀 Quick start
+# BrettStevenson.io
 
-1.  **Create a Gatsby site.**
+A personal portfolio website created using [GatsbyJS](https://www.gatsbyjs.org).  
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Features  
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+- Multi-page layout
+- [TailwindCSS](https://tailwindcss.com/) & [styled-components](https://www.styled-components.com/) for styling
+- [React Spring](https://github.com/drcmda/react-spring) for animations
+- WebApp Manifest Support
+- Offline Support
+- Responsive images
+  - The right image size for every screen size
+  - WebP support for compatible browsers
+  - Lazy-Loading
+- SEO
+  - Schema.org JSONLD
+  - OpenGraph Tags
+  - Twitter Tags
 
-2.  **Start developing.**
+<br>
 
-    Navigate into your new site’s directory and start it up.
+**Built with:**  
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+<p>
+  <a href="https://www.gatsbyjs.org/"><img src="https://user-images.githubusercontent.com/16360374/54067385-3051be80-41f4-11e9-9daf-29f910f35427.png" alt="GatsbyJS" height="40"></a>
+  <a href="https://reactjs.org/"><img src="https://user-images.githubusercontent.com/16360374/54067296-34c9a780-41f3-11e9-985c-dae0828c2470.png" alt="React" height="40"></a>
+  <a href="https://graphql.org/"><img src="https://user-images.githubusercontent.com/16360374/54067380-292ab080-41f4-11e9-9819-6d96fb2124e2.png" alt="GraphQL" height="40"></a>
+  <a href="https://tailwindcss.com"><img src="https://user-images.githubusercontent.com/16360374/54067382-2b8d0a80-41f4-11e9-8613-98edcad9e89f.png" alt="TailwindCSS" height="40"></a>
+  <a href="https://www.styled-components.com/"><img src="https://user-images.githubusercontent.com/16360374/54067384-2def6480-41f4-11e9-9e55-a32e72ed23de.png" alt="Styled Components" height="40"></a>
+  <a href="https://www.react-spring.io/"><img src="https://user-images.githubusercontent.com/16360374/54067378-26c85680-41f4-11e9-8cca-552b091b267b.png" alt="React Spring" height="40"></a>
+  <a href="https://disqus.com/"><img src="https://user-images.githubusercontent.com/16360374/55284185-43087080-5326-11e9-9931-cf0baddc2684.png" alt="Disqus" height="40"></a>
+</p>
 
-3.  **Open the code and start customizing!**
+<br /><br />
 
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+<p align="center">
+  <img src="./pagespeed.svg" alt="PageSpeed Insights" height="175px" />
+</p>
