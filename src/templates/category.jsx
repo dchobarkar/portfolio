@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-// Components
+
 import BlogLayout from 'components/BlogLayout';
-// Hooks
 import useWindowSize from 'hooks/useWindowSize';
 
 const Category = ({ pageContext, data }) => {
@@ -17,6 +16,7 @@ const Category = ({ pageContext, data }) => {
     />
   );
 };
+
 Category.propTypes = {
   pageContext: PropTypes.shape({
     category: PropTypes.string.isRequired,

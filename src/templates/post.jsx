@@ -1,26 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-// Config
-import config from 'config/website'
-// Components
-import PostLayout from 'components/PostLayout'
-import PostMeta from 'components/PostMeta'
-import MDXRenderer from 'components/Post/MDX'
-// Hooks
-import useWindowSize from 'hooks/useWindowSize'
-// Styles
-import 'styles/post.css'
-import 'styles/syntax.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
-
+import config from 'config/website';
+import PostLayout from 'components/PostLayout';
+import PostMeta from 'components/PostMeta';
+import MDXRenderer from 'components/Post/MDX';
+import useWindowSize from 'hooks/useWindowSize';
+import 'styles/post.css';
+import 'styles/syntax.css';
 
 const PostTemplate = ({ data, pageContext, location }) => {
-  // require('typeface-source-code-pro')
-  const windowSize = useWindowSize()
-  const author = config.author
-  author.image = data.avatar
-  const post = Object.assign({}, data.post, data.post.frontmatter, {author: author})
+  const windowSize = useWindowSize();
+  const author = config.author;
+  author.image = data.avatar;
+  const post = Object.assign({}, data.post, data.post.frontmatter, {
+    author: author,
+  });
 
   return (
     <>
@@ -31,6 +27,7 @@ const PostTemplate = ({ data, pageContext, location }) => {
         thumbnail={post.image}
         url={`/blog${post.fields.slug}`}
       />
+
       <PostLayout
         post={post}
         location={location}
@@ -40,8 +37,9 @@ const PostTemplate = ({ data, pageContext, location }) => {
         <MDXRenderer content={post.body} />
       </PostLayout>
     </>
-  )
-}
+  );
+};
+
 PostTemplate.propTypes = {
   data: PropTypes.shape({
     avatar: PropTypes.shape({
@@ -76,17 +74,14 @@ PostTemplate.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
-}
+};
 
-export default PostTemplate
+export default PostTemplate;
 
 export const postQuery = graphql`
   query ($slug: String!) {
     post: mdx(
-      fields: {
-        sourceInstanceName: {eq: "posts"},
-        slug: {eq: $slug}
-      }
+      fields: { sourceInstanceName: { eq: "posts" }, slug: { eq: $slug } }
     ) {
       id
       body
@@ -100,20 +95,15 @@ export const postQuery = graphql`
         category
         image {
           childImageSharp {
-            gatsbyImageData(
-              layout: FULL_WIDTH
-            )
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
     }
-    avatar: file(relativePath: {eq: "me.jpg"}) {
+    avatar: file(relativePath: { eq: "me.jpg" }) {
       childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED,
-          width: 240
-        )
+        gatsbyImageData(layout: CONSTRAINED, width: 240)
       }
     }
   }
-`
+`;
