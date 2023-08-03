@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-sitemap: https://brettstevenson.io/sitemap/sitemap-index.xml
+sitemap: https://darshanwebdev.com/sitemap/sitemap-index.xml

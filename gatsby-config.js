@@ -1,36 +1,43 @@
-const dotenv = require(`dotenv`)
-const path = require('path')
-const config = require(`./config/website`)
-const styleVariables = require(`./src/styles/variables.js`)
-const tailwindConfig = require(`./tailwind.config.js`)
+const dotenv = require(`dotenv`);
+const path = require('path');
 
+const config = require(`./config/website`);
+const styleVariables = require(`./src/styles/variables.js`);
+const tailwindConfig = require(`./tailwind.config.js`);
 
-const pathPrefix = config.pathPrefix === `/` ? `` : config.pathPrefix
+const pathPrefix = config.pathPrefix === `/` ? `` : config.pathPrefix;
 
-if (process.env.ENVIRONMENT !== 'production')
-  dotenv.config();
+if (process.env.ENVIRONMENT !== 'production') dotenv.config();
 
 dotenv.config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NODE_ENV === 'production';
 
-const githubToken = process.env.GITHUB_TOKEN
+const githubToken = process.env.GITHUB_TOKEN;
 
 module.exports = {
   /* General Information */
   siteMetadata: {
-    title: `Brett Stevenson`,
-    description: `Full-Stack Software Developer, Designer, and Student`,
-    siteUrl: `https://brettstevenson.io`,
-    author: `Brett Stevenson`,
+    title: `Darshan Chobarkar`,
+    description: `Welcome to Darshan Web Dev, a freelance web developer specializing in frontend and backend solutions. With expertise in Gatsby and NestJs frameworks, I create captivating websites with user-friendly interfaces and impressive Prismic CMS integrations. Explore my portfolio for striking designs and robust backend functionality. Let's collaborate and bring your web visions to life!`,
+    siteUrl: `https://darshanwebdev.com`,
+    author: `Darshan Chobarkar`,
     keywords: [
-      `brett stevenson`, `full-stack`, `software`, `developer`,
-      `design`, `portfolio`, `blog`, `python`, `javascript`,
-      `react`, `gatsby`, `website optimization`,
+      `Darshan Chobarkar`,
+      `Darshan`,
+      `Gatsby`,
+      `fullstack`,
+      `software`,
+      `engineer`,
+      `developer`,
+      `design`,
+      `portfolio`,
+      `react`,
+      `javascript`,
+      `website optimization`,
     ],
-    disqusShortname: `tterb-gatsby`,
     menuLinks: [
       {
         name: `Home`,
@@ -38,9 +45,9 @@ module.exports = {
         external: false,
       },
       {
-        name: `Design`,
-        link: `https://tterb-design.netlify.app/`,
-        external: true,
+        name: `Project`,
+        link: `/project/`,
+        external: false,
       },
       {
         name: `Blog`,
@@ -96,7 +103,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-lodash`,
       options: {
-        disabledFeatures: [`cloning`, `flattening`, `metadata`, `placeholders`, `shorthands`],
+        disabledFeatures: [
+          `cloning`,
+          `flattening`,
+          `metadata`,
+          `placeholders`,
+          `shorthands`,
+        ],
       },
     },
     {
@@ -152,12 +165,14 @@ module.exports = {
         mode: `async`,
         /* Enable font loading listener to handle FOUT */
         enableListener: true,
-        custom: [{
-          /* Exact name of the font as defied in @font-face CSS rule */
-          name: [`TTNorms2`],
-          /* Path to the font CSS file inside the "static" folder with @font-face definition */
-          file: `/fonts/fonts.css`,
-        }],
+        custom: [
+          {
+            /* Exact name of the font as defied in @font-face CSS rule */
+            name: [`TTNorms2`],
+            /* Path to the font CSS file inside the "static" folder with @font-face definition */
+            file: `/fonts/fonts.css`,
+          },
+        ],
       },
     },
     {
@@ -173,7 +188,7 @@ module.exports = {
           require(`postcss-discard-comments`),
           require(`cssnano`), // Minify CSS
           require(`postcss-preset-env`)({
-            stage: 3,  // More info about stages: https://cssdb.org/#staging-process
+            stage: 3, // More info about stages: https://cssdb.org/#staging-process
           }),
           require(`tailwindcss`)(tailwindConfig),
         ],
@@ -205,4 +220,4 @@ module.exports = {
     /* Must be placed at the end */
     { resolve: `gatsby-plugin-offline` },
   ],
-}
+};

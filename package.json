@@ -1,9 +1,9 @@
 {
-  "name": "brettstevenson-io",
+  "name": "darshanwebdev-com",
   "description": "A portfolio website created using GatsbyJS",
   "version": "1.0.0",
-  "author": "Brett Stevenson <bstevensondev@gmail.com> (https://brettstevenson.io)",
-  "homepage": "https://brettstevenson.io",
+  "author": "Darshan Chobarkar <admin@darshanwebdev.com> (https://darshanwebdev.com)",
+  "homepage": "https://darshanwebdev.com",
   "license": "MIT",
   "scripts": {
     "dev": "gatsby develop -o",
@@ -115,11 +115,11 @@
     "yargs-parser": "^13.1.2"
   },
   "repository": {
-    "url": "https://github.com/tterb/gatsby-portfolio",
+    "url": "https://github.com/dchobarkar/portfolio",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/tterb/gatsby-portfolio/issues"
+    "url": "https://github.com/dchobarkar/portfolio/issues"
   },
   "standard": {
     "parser": "babel-eslint"

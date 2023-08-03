@@ -5,9 +5,9 @@
 
 # BrettStevenson.io
 
-A personal portfolio website created using [GatsbyJS](https://www.gatsbyjs.org).  
+A personal portfolio website created using [GatsbyJS](https://www.gatsbyjs.org).
 
-## Features  
+## Features
 
 - Multi-page layout
 - [TailwindCSS](https://tailwindcss.com/) & [styled-components](https://www.styled-components.com/) for styling
@@ -25,7 +25,7 @@ A personal portfolio website created using [GatsbyJS](https://www.gatsbyjs.org).
 
 <br>
 
-**Built with:**  
+**Built with:**
 
 <p>
   <a href="https://www.gatsbyjs.org/"><img src="https://user-images.githubusercontent.com/16360374/54067385-3051be80-41f4-11e9-9daf-29f910f35427.png" alt="GatsbyJS" height="40"></a>
