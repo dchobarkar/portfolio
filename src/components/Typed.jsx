@@ -4,28 +4,27 @@ import * as TypedLib from 'typed.js';
 
 export const Typed = (props) => {
   // Create reference to store the DOM element containing the animation
-	const el = React.useRef(null);
+  const ele = React.useRef(null);
   // Create reference to store the Typed instance itself
-	const typed = React.useRef(null);
+  const typed = React.useRef(null);
 
   useEffect(() => {
     // elRef refers to the <span> rendered below
-    typed.current = new TypedLib(el.current, props);
+    typed.current = new TypedLib(ele.current, props);
 
     return () => {
       // Make sure to destroy Typed instance during cleanup
       // to prevent memory leaks
       typed.current.destroy();
-    }
-  }, [props.strings])
+    };
+  }, [props.strings]);
 
   return (
     <div>
-      <span style={{ whiteSpace: 'pre' }} ref={el} />
+      <span style={{ whiteSpace: 'pre' }} ref={ele} />
     </div>
   );
 };
-
 
 Typed.propTypes = {
   strings: PropTypes.arrayOf(PropTypes.string).isRequired,

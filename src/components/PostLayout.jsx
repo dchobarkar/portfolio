@@ -1,24 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
-import styled from 'styled-components'
-import { Disqus } from 'gatsby-plugin-disqus'
-// Views
-import Footer from 'views/Footer'
-// Components
-import Nav from 'components/Nav'
-import PostHeader from 'components/PostHeader'
-import PostAuthor from 'components/PostAuthor'
-import PageLink from 'components/PageLink'
-import ScrollTop from 'components/ScrollTop'
-// Config
-import config from 'config/website'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import styled from 'styled-components';
+import { Disqus } from 'gatsby-plugin-disqus';
 
+import Footer from 'views/Footer';
+import Nav from 'components/Nav';
+import PostHeader from 'components/PostHeader';
+import PostAuthor from 'components/PostAuthor';
+import ScrollTop from 'components/ScrollTop';
+import config from 'config/website';
 
 const Wrapper = styled.div`
-  background: rgba(255,255,255,0.985);
-`
+  background: rgba(255, 255, 255, 0.985);
+`;
 
 const HeroImage = styled(GatsbyImage)`
   max-height: 40vh;
@@ -28,7 +23,12 @@ const HeroImage = styled(GatsbyImage)`
   &::before {
     content: '';
     position: absolute;
-    background: linear-gradient(to bottom, black, rgba(0,0,0,0.3), transparent 95%);
+    background: linear-gradient(
+      to bottom,
+      black,
+      rgba(0, 0, 0, 0.3),
+      transparent 95%
+    );
     width: 100vw;
     height: 60px;
     padding: 60px;
@@ -38,67 +38,74 @@ const HeroImage = styled(GatsbyImage)`
       display: none;
     }
   }
-`
+`;
 
 const Separator = styled.hr`
-  border-bottom: 2px solid rgba(0,0,0,0.095);
-`
+  border-bottom: 2px solid rgba(0, 0, 0, 0.095);
+`;
 
 class PostLayout extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
   render() {
-    const { post, location, context, windowSize, children } = this.props
+    const { post, location, windowSize, children } = this.props;
 
-    if (typeof __PREFIX_PATHS__ !== 'undefined' && __PREFIX_PATHS__) {
-      rootPath = `${__PATH_PREFIX__  }/`
-    }
+    if (typeof __PREFIX_PATHS__ !== 'undefined' && __PREFIX_PATHS__)
+      rootPath = `${__PATH_PREFIX__}/`;
+
     const disqusConfig = {
       url: `${config.siteUrl}${location.pathname}`,
       identifier: post.id,
       title: post.title,
-    }
+    };
 
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined')
       // eslint-disable-next-line global-require
-      require('smooth-scroll')('a[href*="#"]')
-    }
+      require('smooth-scroll')('a[href*="#"]');
 
     return (
-      <div className='font-default w-full m-auto'>
-        <span id='top' />
+      <div className="font-default w-full m-auto">
+        <span id="top" />
+
         <Nav windowSize={windowSize} />
+
         {post.image ? (
           <HeroImage
-            className='w-full top-0 left-0'
+            className="w-full top-0 left-0"
             image={post.image.childImageSharp.gatsbyImageData}
             alt={post.title}
           />
         ) : null}
-        <Wrapper className='font-default m-0 pt-4 sm:pt-0 pb-0'>
+
+        <Wrapper className="font-default m-0 pt-4 sm:pt-0 pb-0">
           <PostHeader post={post} />
-          <div className='text-black text-opacity-85 text-base leading-normal w-full sm:w-9/10 max-w-240 md:w-4/5 lg:w-3/4 mt-0 mb-8 mx-auto p-0 pb-4 md:px-6 md:pb-9' role='main'>
+
+          <div
+            className="text-black text-opacity-85 text-base leading-normal w-full sm:w-9/10 max-w-240 md:w-4/5 lg:w-3/4 mt-0 mb-8 mx-auto p-0 pb-4 md:px-6 md:pb-9"
+            role="main"
+          >
             {children}
-            <ScrollTop
-              location={location}
-              visible={true}
-            />
+
+            <ScrollTop location={location} visible={true} />
           </div>
-          <Separator className='w-5/6 border-none my-4 mt-8 mx-auto' />
+
+          <Separator className="w-5/6 border-none my-4 mt-8 mx-auto" />
+
           <PostAuthor author={post.author} />
+
           <Disqus
-            className='w-9/10 md:w-4/5 lg:w-3/4 mx-auto mt-18 mb-20'
+            className="w-9/10 md:w-4/5 lg:w-3/4 mx-auto mt-18 mb-20"
             config={disqusConfig}
           />
           <Footer />
         </Wrapper>
       </div>
-    )
+    );
   }
 }
+
 PostLayout.propTypes = {
   post: PropTypes.shape({
     id: PropTypes.string.isRequired,
@@ -127,6 +134,6 @@ PostLayout.propTypes = {
     PropTypes.node,
   ]).isRequired,
   windowSize: PropTypes.object.isRequired,
-}
+};
 
-export default PostLayout
+export default PostLayout;

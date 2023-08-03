@@ -1,19 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 const InputWrapper = styled.div`
-  input, textarea {
-    -webkit-text-fill-color: rgba(255,255,255,0.8);
+  input,
+  textarea {
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.8);
     line-height: 1.2;
-    &::placeholder, &::-webkit-input-placeholder {
-      color: rgba(255,255,255,0.4) !important;
+    &::placeholder,
+    &::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.4) !important;
     }
     &:focus {
       padding-top: 0.75rem;
       + .focus-input::before {
-        background: linear-gradient(to bottom right, SlateBlue 35%, DeepSkyBlue 65%);
+        background: linear-gradient(
+          to bottom right,
+          SlateBlue 35%,
+          DeepSkyBlue 65%
+        );
       }
       + .focus-input::after {
         color: #888;
@@ -44,13 +49,13 @@ const InputWrapper = styled.div`
     margin-top: 1.5rem;
     transition: all 250ms ease-in-out;
   }
-`
+`;
 
 const FocusLine = styled.span`
   &::before {
     content: '';
     display: block;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     width: 100%;
     height: 2px;
     left: 0;
@@ -70,45 +75,50 @@ const FocusLine = styled.span`
     transition: all 200ms ease-in-out;
     overflow: hidden;
   }
-`
+`;
 
 const Submit = styled.button`
-  background-image: linear-gradient(to top, #BF2310, #F2433B, #F2433B, #F2433B);
+  background-image: linear-gradient(to top, #bf2310, #f2433b, #f2433b, #f2433b);
   background-size: 100% 300%;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-  &:hover, &:active, &:focus {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  &:hover,
+  &:active,
+  &:focus {
     background-position: 0% 100%;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   }
-`
+`;
 
 export const Form = (props) => (
   <form
     method={props.method}
     name={props.name}
-    data-netlify='true'
-    netlify-honeypot='only_for_bots'
-    acceptCharset='UTF-8'
-    className={`text-left w-full my-0 mx-auto${props.className ? ` ${props.className}` : ''}`}
+    data-netlify="true"
+    netlify-honeypot="only_for_bots"
+    acceptCharset="UTF-8"
+    className={`text-left w-full my-0 mx-auto${
+      props.className ? ` ${props.className}` : ''
+    }`}
   >
     {/* action='success' */}
-    <input type='hidden' name='form-name' value={props.name} />
+    <input type="hidden" name="form-name" value={props.name} />
     {props.children}
     {/* Honeypot */}
     <input
-      type='email'
-      name='only_for_bots'
-      aria-label='honeypot'
-      className='absolute w-0 h-0 top-0 left-0 opacity-0 z-min'
+      type="email"
+      name="only_for_bots"
+      aria-label="honeypot"
+      className="absolute w-0 h-0 top-0 left-0 opacity-0 z-min"
     />
   </form>
-)
+);
+
 Form.defaultProps = {
   method: 'POST',
   name: 'contact',
   button: 'Submit',
   // action: '/success'
-}
+};
 Form.propTypes = {
   method: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
@@ -118,13 +128,16 @@ Form.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-}
-
+};
 
 export const Input = (props) => (
-  <InputWrapper className={`contact-input${props.value.length ? ' has-input' : ''} relative mb-6`}>
+  <InputWrapper
+    className={`contact-input${
+      props.value.length ? ' has-input' : ''
+    } relative mb-6`}
+  >
     <input
-      className='form-input bg-transparent text-base text-white text-opacity-80 text-left w-full md:w-9/10 border-none outline-none py-2 px-4 pl-1 transition-all duration-300 ease-in-out'
+      className="form-input bg-transparent text-base text-white text-opacity-80 text-left w-full md:w-9/10 border-none outline-none py-2 px-4 pl-1 transition-all duration-300 ease-in-out"
       type={props.type}
       name={props.name}
       value={props.value}
@@ -133,16 +146,18 @@ export const Input = (props) => (
       aria-label={props.name}
       required
     />
+
     <FocusLine
-      className='focus-input block w-full md:w-9/10 h-full top-0 left-0 overflow-hidden pointer-events-none'
+      className="focus-input block w-full md:w-9/10 h-full top-0 left-0 overflow-hidden pointer-events-none"
       data-placeholder={props.placeholder}
     />
   </InputWrapper>
-)
+);
+
 Input.defaultProps = {
   type: 'text',
   autocomplete: false,
-}
+};
 Input.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
@@ -150,13 +165,16 @@ Input.propTypes = {
   placeholder: PropTypes.string.isRequired,
   autocomplete: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
-}
-
+};
 
 export const TextArea = (props) => (
-  <InputWrapper className={`contact-input ${props.value.length ? 'has-input' : ''} relative mb-6`}>
+  <InputWrapper
+    className={`contact-input ${
+      props.value.length ? 'has-input' : ''
+    } relative mb-6`}
+  >
     <textarea
-      className='form-textarea bg-transparent text-base text-white text-opacity-80 text-left w-full md:w-9/10 min-h-32 border-none outline-none py-2 px-4 pl-1 transition-all duration-300 ease-in-out mt-1 focus:mt-1'
+      className="form-textarea bg-transparent text-base text-white text-opacity-80 text-left w-full md:w-9/10 min-h-32 border-none outline-none py-2 px-4 pl-1 transition-all duration-300 ease-in-out mt-1 focus:mt-1"
       name={props.name}
       value={props.value}
       autoComplete={props.autocomplete ? 'off' : 'on'}
@@ -164,35 +182,40 @@ export const TextArea = (props) => (
       aria-label={props.name}
       required
     />
+
     <FocusLine
-      className='focus-input block w-full md:w-9/10 h-full top-0 left-0 overflow-hidden pointer-events-none'
+      className="focus-input block w-full md:w-9/10 h-full top-0 left-0 overflow-hidden pointer-events-none"
       data-placeholder={props.placeholder}
     />
   </InputWrapper>
-)
+);
+
 TextArea.defaultProps = {
   type: 'text',
   autocomplete: false,
-}
+};
 TextArea.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   autocomplete: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
-}
-
+};
 
 export const Button = (props) => (
-  <Submit type={props.type} className='block text-base text-white text-opacity-90 font-semibold text-center w-1/2 md:w-1/4 max-w-44 h-auto border-none rounded-lg mt-12 lg:mt-20 px-5 py-3 transition-all duration-300 ease-in-out outline-none cursor-pointer'>
+  <Submit
+    type={props.type}
+    className="block text-base text-white text-opacity-90 font-semibold text-center w-1/2 md:w-1/4 max-w-44 h-auto border-none rounded-lg mt-12 lg:mt-20 px-5 py-3 transition-all duration-300 ease-in-out outline-none cursor-pointer"
+  >
     {props.value ? props.value : props.children}
   </Submit>
-)
+);
+
 Button.defaultProps = {
   type: 'submit',
-}
+};
 Button.propTypes = {
   type: PropTypes.string.isRequired,
   value: PropTypes.string,
   children: PropTypes.element,
-}
+};
