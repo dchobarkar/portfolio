@@ -1,11 +1,11 @@
-import { createGlobalStyle } from 'styled-components'
-
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: #161719;
-    ${''/* font-family: 'TTNorms2', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', sans-serif;
+    ${
+      '' /* font-family: 'TTNorms2', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-feature-settings: 'ss02', 'ss01', 'kern', 'liga', 'clig', 'calt';
@@ -20,8 +20,9 @@ const GlobalStyle = createGlobalStyle`
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; */}
+    -moz-osx-font-smoothing: grayscale; */
+    }
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

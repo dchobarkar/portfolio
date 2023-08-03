@@ -1,5 +1,4 @@
-import { keyframes, css } from 'styled-components'
-
+import { keyframes, css } from 'styled-components';
 
 const wave = keyframes`
   0% {
@@ -11,10 +10,10 @@ const wave = keyframes`
   100% {
     d: path("M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z");
   }
-`
-export const waveAnimation = length => css`
+`;
+export const waveAnimation = (length) => css`
   animation: ${wave} ${length} linear infinite alternate;
-`
+`;
 
 const buttonClick = keyframes`
   0% { transform: scale(1) translateY(0); }
@@ -25,10 +24,10 @@ const buttonClick = keyframes`
   40% { transform: scale(1) translateY(0); }
   50% { transform: scale(0.975) translateY(12px); }
   65% { transform: scale(1) translateY(0); }
-`
-export const buttonClickAnimation = length => css`
+`;
+export const buttonClickAnimation = (length) => css`
   animation: ${buttonClick} ${length} ease 0s 1;
-`
+`;
 
 const scrollArrow = keyframes`
   0% { transform: scaleY(1) translateY(0); }
@@ -38,10 +37,10 @@ const scrollArrow = keyframes`
 	55% { transform: scaleY(0.9) translateY(10px); }
 	60% { transform: scaleY(1) translateY(0); }
 	100% { transform: scaleY(1) translateY(0); }
-`
-export const scrollArrowAnimation = length => css`
+`;
+export const scrollArrowAnimation = (length) => css`
   animation: ${scrollArrow} ${length} ease 0s 1;
-`
+`;
 
 const glitch = keyframes`
   0%   { clip: rect( 31px, 9999px,  94px, 0) }
@@ -55,10 +54,10 @@ const glitch = keyframes`
   80%  { clip: rect(193px, 9999px, 276px, 0) }
   90%  { clip: rect( 98px, 9999px, 129px, 0) }
   100% { clip: rect(202px, 9999px, 284px, 0) }
-`
-export const glitchAnimation = length => css`
+`;
+export const glitchAnimation = (length) => css`
   animation: ${glitch} ${length} infinite linear alternate-reverse;
-`
+`;
 
 const glitchHover = keyframes`
   0%  { transform: translate(0) }
@@ -70,7 +69,8 @@ const glitchHover = keyframes`
   60% { transform: translate(5px, 5px) }
   80% { transform: translate(5px, -5px) }
   to  { transform: translate(0) }
-`
+`;
 export const glitchHoverAnimation = (length, delay, option) => css`
-  animation: ${glitchHover} ${length} ${delay} cubic-bezier(0.25, 0.46, 0.45, 0.94) ${option} both infinite;
-`
+  animation: ${glitchHover} ${length} ${delay}
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) ${option} both infinite;
+`;

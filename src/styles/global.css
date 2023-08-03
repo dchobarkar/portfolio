@@ -4,31 +4,31 @@ html,
 body {
   @apply bg-base-200 font-sans font-normal w-full h-full m-0 p-0 box-border;
   font-size: 16px;
-	font-feature-settings: 'ss02', 'ss01', 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'ss02', 'ss01', 'kern', 'liga', 'clig', 'calt';
   font-kerning: normal;
   text-rendering: optimizelegibility;
   backface-visibility: hidden;
   overflow-x: hidden;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-	@apply text-white text-opacity-80 no-underline border-none transition-all duration-300 ease-in-out cursor-pointer;
-	&:hover,
+  @apply text-white text-opacity-80 no-underline border-none transition-all duration-300 ease-in-out cursor-pointer;
+  &:hover,
   &:focus,
-	&.active a {
-		@apply text-accent;
-	}
+  &.active a {
+    @apply text-accent;
+  }
   &::focus:not(:focus-visible) {
     @apply outline-none;
   }
 }
 
 button::focus:not(:focus-visible) {
-	@apply outline-none;
+  @apply outline-none;
 }
 
 @tailwind components;
@@ -44,62 +44,82 @@ button::focus:not(:focus-visible) {
 
 .gradient-text-green {
   position: relative;
-  background: linear-gradient(to right, $cube_green, $cube_blue 50%, rgba(255,255,255,0.8) 50%);
+  background: linear-gradient(
+    to right,
+    $cube_green,
+    $cube_blue 50%,
+    rgba(255, 255, 255, 0.8) 50%
+  );
   background-size: 200% 100%;
   background-position: 100%;
   background-clip: text;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: background-position 250ms ease;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:hover,
   &:focus {
-      background-position: 0 50%;
+    background-position: 0 50%;
   }
 }
 
 .gradient-text-red {
   position: relative;
-  background: linear-gradient(to right, $cube_orange, $cube_red 50%, rgba(255,255,255,0.8) 50%);
+  background: linear-gradient(
+    to right,
+    $cube_orange,
+    $cube_red 50%,
+    rgba(255, 255, 255, 0.8) 50%
+  );
   background-size: 200% 100%;
   background-position: 100%;
   background-clip: text;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: background-position 250ms ease;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:hover,
   &:focus {
-      background-position: 0 50%;
+    background-position: 0 50%;
   }
 }
 
 .gradient-text-blue {
   position: relative;
-  background: linear-gradient(to right, DeepSkyBlue, SlateBlue 50%, rgba(255,255,255,0.8) 50%);
+  background: linear-gradient(
+    to right,
+    DeepSkyBlue,
+    SlateBlue 50%,
+    rgba(255, 255, 255, 0.8) 50%
+  );
   background-size: 200% 100%;
   background-position: 100%;
   background-clip: text;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: background-position 250ms ease;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &:hover,
   &:focus {
-      background-position: 0 50%;
+    background-position: 0 50%;
   }
 }
 
 .gradient-text-blue-dark {
   position: relative;
-  background: linear-gradient(to right, DeepSkyBlue, SlateBlue 50%, rgba(53,59,69,0.9) 50%);
+  background: linear-gradient(
+    to right,
+    DeepSkyBlue,
+    SlateBlue 50%,
+    rgba(53, 59, 69, 0.9) 50%
+  );
   background-size: 200% 100%;
   background-position: 100%;
   background-clip: text;
-  color: rgba(53,59,69,0.9);
+  color: rgba(53, 59, 69, 0.9);
   text-decoration: none;
   transition: background-position 250ms ease;
   -webkit-background-clip: text;
@@ -107,7 +127,7 @@ button::focus:not(:focus-visible) {
   &:hover,
   &:focus,
   &:focus-within {
-      background-position: 0 50%;
+    background-position: 0 50%;
   }
 }
 
@@ -128,7 +148,7 @@ svg.logo {
   overflow: visible !important;
   path {
     fill: none;
-    stroke: rgba(255,255,255,0.95);
+    stroke: rgba(255, 255, 255, 0.95);
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 15px;
