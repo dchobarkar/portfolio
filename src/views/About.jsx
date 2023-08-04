@@ -40,9 +40,9 @@ const About = ({ id, avatar, isMobile }) => (
         </div>
 
         <p className="text-gray-700 text-lg lg:text-xl font-sans leading-normal pt-8 md:pt-6 lg:pt-8">
-          I'm Darshan, a freelance web developer skilled in frontend and backend
-          development. With expertise in Gatsby and NestJs, I create captivating
-          websites. I'm particularly fond of{' '}
+          A freelance web developer skilled in frontend and backend development.
+          With expertise in Gatsby and NestJs, I create captivating websites.
+          I'm particularly fond of{' '}
           <a
             className="gradient-text-green text-white font-semibold"
             href="https://github.com/dchobarkar?tab=repositories&q=&type=&language=javascript&sort="

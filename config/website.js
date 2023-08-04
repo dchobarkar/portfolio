@@ -36,11 +36,6 @@ module.exports = {
       external: false,
     },
     {
-      name: `Project`,
-      link: `/project/`,
-      external: false,
-    },
-    {
       name: `Blog`,
       link: `/blog/`,
       external: false,

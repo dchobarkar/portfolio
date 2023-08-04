@@ -62,12 +62,6 @@ const PostAuthor = ({ author }) => (
         />
 
         <SocialLink
-          Label="Check out my Dribbble"
-          link={author.dribbble}
-          icon={<Dribbble size="1em" />}
-        />
-
-        <SocialLink
           Label="Check out my Twitter"
           link={author.twitter}
           icon={<Twitter size="1em" />}
@@ -81,7 +75,7 @@ const PostAuthor = ({ author }) => (
 
         <SocialLink
           Label="Contact me"
-          link={'https://brettstevenson.io/contact'}
+          link={'https://darshanwebdev.com/contact'}
           icon={<Envelope size="1em" />}
         />
       </AuthorLinks>
