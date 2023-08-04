@@ -67,9 +67,9 @@ const Hero = (props) => (
         <Title className="font-title font-bold text-white text-opacity-95 leading-none w-full text-6xl md:text-7xl lg:text-8xl xl:text-9xl mt-4 mb-6 ml-0 lg:mt-6">
           Hello,
           <br />
-          I'm Brett
+          I'm Darshan
           <br />
-          Stevenson<span className="text-accent accent-dot">.</span>
+          Chobarkar<span className="text-accent accent-dot">.</span>
         </Title>
         <Subtitle>
           <Typed
@@ -79,8 +79,8 @@ const Hero = (props) => (
             style={typedStyle}
             strings={[
               'I am a Software Engineer',
-              'I am a Designer',
-              'I am a Code Monkey',
+              'I am a Developer',
+              'I am a Code Enthusiast',
               'I am a Full-Stack Developer',
               '. . .^1000',
               'I like to build stuff<span class="accent-text">.</span>',
