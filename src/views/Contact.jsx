@@ -42,7 +42,7 @@ const Contact = ({ id }) => (
         or find me on other platforms:{' '}
         <a
           className="gradient-text-blue text-white font-semibold"
-          href="https://github.com/tterb"
+          href="https://github.com/dchobarkar"
           aria-label="GitHub"
           target="_blank"
           rel="noopener noreferrer"
@@ -52,12 +52,12 @@ const Contact = ({ id }) => (
         &{' '}
         <a
           className="gradient-text-blue text-white font-semibold"
-          href="https://www.dribbble.com/tterb/"
+          href="https://www.linkedin.com/in/dchobarkar/"
           aria-label="Dribbble"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dribbble
+          LinkedIn
         </a>
       </ContactText>
     </Inner>

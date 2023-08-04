@@ -50,7 +50,7 @@ const Projects = ({ id, projects, windowSize }) => {
                   title: 'More..',
                   description:
                     "You can see what else I've been building on GitHub",
-                  github: 'https://github.com/tterb',
+                  github: 'https://github.com/dchobarkar',
                 }}
                 bg={colors[0]}
               />

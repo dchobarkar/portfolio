@@ -30,30 +30,34 @@ const About = ({ id, avatar, isMobile }) => (
           />
 
           <span className="text-white text-xl font-medium leading-tighter pt-8 hidden md:block md:pt-0 md:pl-10 lg:pl-12 lg:text-2xl xl:text-3xl">
-            The English language can not fully capture the depth and complexity
-            of my thoughts. So I choose to incorporate Emojis into my speech to
-            better express myself 😜
+            Hey there, I'm Darshan, the web wizard behind the code curtain! As a
+            frontend and backend sorcerer, I conjure captivating websites that
+            work like magic! When I'm not immersed in lines of code, you'll find
+            me pulling rabbits out of hats (metaphorically, of course!). Whether
+            it's Gatsby or NestJs spells, I've got the web enchantments to
+            dazzle your digital dreams! Let's weave some web magic together!
           </span>
         </div>
 
         <p className="text-gray-700 text-lg lg:text-xl font-sans leading-normal pt-8 md:pt-6 lg:pt-8">
-          I'm a full-stack engineer with a passion for using technology to
-          create unique and memorable experiences. I have experience working in
-          a variety of languages, but I'm particularly fond of{' '}
+          I'm Darshan, a freelance web developer skilled in frontend and backend
+          development. With expertise in Gatsby and NestJs, I create captivating
+          websites. I'm particularly fond of{' '}
           <a
             className="gradient-text-green text-white font-semibold"
-            href="https://github.com/tterb?utf8=%E2%9C%93&tab=repositories&q=&type=&language=javascript"
+            href="https://github.com/dchobarkar?tab=repositories&q=&type=&language=javascript&sort="
           >
             Javascript
           </a>{' '}
           and{' '}
           <a
             className="gradient-text-green text-white font-semibold"
-            href="https://github.com/tterb?utf8=%E2%9C%93&tab=repositories&q=&type=&language=python font-medium"
+            href="https://github.com/dchobarkar?tab=repositories font-medium"
           >
-            Python
-          </a>
-          .
+            Gatsby
+          </a>{' '}
+          , and I can't wait to collaborate with you to bring your web visions
+          to life!
         </p>
       </Inner>
     </Content>

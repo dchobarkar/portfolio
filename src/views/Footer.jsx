@@ -104,40 +104,28 @@ const Footer = () => {
       <FooterWrapper className="relative font-sans text-xxs text-gray-600 text-center top-10 sm:top-14 md:top-16 lg:top-24 p-6 px-4 z-9999">
         <ul className="list-reset text-3xl mt-0 mb-4`">
           <SocialLink
-            link="https://github.com/tterb"
-            label="Check out my GitHub"
-            icon={<Github size="1em" />}
-          />
-
-          <SocialLink
-            link="https://dribbble.com/tterb"
-            label="Check out my Dribbble"
-            icon={<Dribbble size="1em" />}
-          />
-
-          <SocialLink
-            link="https://twitter.com/bstevensondev"
-            label="Check out my Twitter"
-            icon={<Twitter size="1em" />}
-          />
-
-          <SocialLink
-            link="https://linkedin.com/in/brett-stevenson/"
+            link="https://www.linkedin.com/in/dchobarkar/"
             label="Check out my LinkedIn"
             icon={<LinkedinIn size="1em" />}
           />
 
           <SocialLink
-            link="https://deviantart.com/bstevenson"
-            label="Check out my DeviantArt"
-            icon={<Deviantart size="0.9em" />}
+            link="https://github.com/dchobarkar"
+            label="Check out my GitHub"
+            icon={<Github size="1em" />}
+          />
+
+          <SocialLink
+            link="https://twitter.com/barbatos__08"
+            label="Check out my Twitter"
+            icon={<Twitter size="1em" />}
           />
         </ul>
 
         <div className="flex text-sm items-center align-middle pt-2">
           &copy; {getCurrentYear()} by &nbsp;
           <PageLink className="gradient-text-green" to="/">
-            Brett Stevenson
+            Darshan Chobarkar
           </PageLink>
           <Circle className="relative w-1 my-0 mx-2" size="1em" />
           <span className="flex items-center align-middle">
