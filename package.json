@@ -12,7 +12,8 @@
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "lint:ci": "npm run lint --format junit -o results/eslint/result.xml",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "serve": "gatsby serve"
   },
   "keywords": [],
   "dependencies": {
