@@ -217,7 +217,5 @@ module.exports = {
         path: `${__dirname}/src/content/projects/`,
       },
     },
-    /* Must be placed at the end */
-    { resolve: `gatsby-plugin-offline` },
   ],
 };
