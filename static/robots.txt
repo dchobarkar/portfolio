@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-sitemap: https://darshanwebdev.com/sitemap/sitemap-index.xml

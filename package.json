@@ -1,126 +1,71 @@
 {
-  "name": "darshanwebdev-com",
-  "description": "A portfolio website created using GatsbyJS",
-  "version": "1.0.0",
-  "author": "Darshan Chobarkar <admin@darshanwebdev.com> (https://darshanwebdev.com)",
-  "homepage": "https://darshanwebdev.com",
-  "license": "MIT",
+  "private": true,
+  "name": "masterPortfolio",
+  "homepage": ".",
+  "version": "0.1.0",
   "scripts": {
-    "dev": "gatsby develop -o",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
-    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "lint:ci": "npm run lint --format junit -o results/eslint/result.xml",
-    "clean": "gatsby clean",
-    "serve": "gatsby serve"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d build",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
-  "keywords": [],
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@mdx-js/mdx": "^1.1.0",
-    "@mdx-js/react": "^1.0.27",
-    "@react-spring/web": "^9.4.5",
-    "dotenv": "^6.2.0",
-    "gatsby": "^3.14.6",
-    "gatsby-cli": "^3.14.0",
-    "gatsby-plugin-disqus": "^1.2.4",
-    "gatsby-plugin-image": "^1.6.0",
-    "gatsby-plugin-lodash": "^4.6.0",
-    "gatsby-plugin-manifest": "^3.6.0",
-    "gatsby-plugin-mdx": "^2.14.1",
-    "gatsby-plugin-netlify": "^3.6.0",
-    "gatsby-plugin-optimize-svgs": "^1.0.5",
-    "gatsby-plugin-postcss": "^4.6.0",
-    "gatsby-plugin-react-helmet": "^4.6.0",
-    "gatsby-plugin-root-import": "^2.0.6",
-    "gatsby-plugin-sharp": "^3.6.0",
-    "gatsby-plugin-sitemap": "^4.10.0",
-    "gatsby-plugin-styled-components": "^4.6.0",
-    "gatsby-remark-copy-linked-files": "^4.3.0",
-    "gatsby-remark-emojis": "^0.4.3",
-    "gatsby-remark-external-links": "^0.0.4",
-    "gatsby-remark-images": "^5.3.0",
-    "gatsby-remark-prismjs": "^5.3.0",
-    "gatsby-remark-responsive-iframe": "^4.3.0",
-    "gatsby-remark-smartypants": "^4.3.0",
-    "gatsby-source-filesystem": "^3.6.0",
-    "gatsby-transformer-remark": "^4.3.0",
-    "gatsby-transformer-sharp": "^3.6.0",
-    "gsap": "^2.1.2",
-    "lodash": "^4.17.21",
-    "prism-react-renderer": "^1.2.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-awesome-reveal": "^4.2.3",
-    "react-dom": "^17.0.2",
-    "react-emoji-render": "^1.2.4",
+    "@apollo/react-hooks": "^3.1.3",
+    "apollo-boost": "^0.4.4",
+    "baseui": "^9.65.3",
+    "bootstrap": "^4.4.1",
+    "chart.js": "^2.9.3",
+    "fs": "0.0.1-security",
+    "gh-pages": "^2.1.1",
+    "graphql": "^14.5.8",
+    "node-fetch": "^2.6.0",
+    "prettier-package-json": "^2.1.3",
+    "radium": "^0.26.0",
+    "react": "^16.10.2",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.10.2",
     "react-helmet": "^6.1.0",
-    "smooth-scroll": "^16.1.3",
-    "styled-components": "^5.2.1",
-    "styled-icons": "^10.27.0",
-    "tailwindcss": "^2.1.4",
-    "typed.js": "^2.0.12",
-    "typeface-source-code-pro": "^1.1.13"
-  },
-  "peerDependencies": {
-    "stylis": "^3.5.0"
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-spring": "^8.0.27",
+    "styled-components": "^5.1.1",
+    "styletron-engine-atomic": "^1.4.6",
+    "styletron-react": "^5.2.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.18.2",
-    "autoprefixer": "^10.2.4",
-    "babel-plugin-styled-components": "^1.12.0",
-    "chalk": "^2.4.1",
-    "cssnano": "^4.1.10",
-    "eslint": "^7.20.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-config-standard": "^16.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.25",
-    "inquirer": "^6.2.0",
-    "postcss": "^8.2.6",
-    "postcss-calc": "^7.0.1",
-    "postcss-discard-comments": "^4.0.2",
-    "postcss-import": "^12.0.1",
-    "postcss-mixins": "^8.1.0",
-    "postcss-nested": "^5.0.3",
-    "postcss-preset-env": "^6.7.0",
-    "postcss-simple-vars": "^6.0.3",
-    "prettier": "^2.7.1"
+    "@iconify/icons-logos": "^1.0.9",
+    "@iconify/react": "^1.1.1",
+    "dotenv": "^6.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "2.0.5"
   },
-  "resolutions": {
-    "@babel/preset-env": "7.12.11",
-    "@babel/plugin-transform-spread": "7.12.1",
-    "acorn": "^7.1.1",
-    "bl": "^4.0.3",
-    "dot-prop": "^5.1.1",
-    "elliptic": "^6.5.3",
-    "graphql": "^15.4.0",
-    "graphql-compose": "^7.25.0",
-    "graphql-playground-html": "^1.6.22",
-    "jpeg-js": "^0.4.0",
-    "kind-of": "^6.0.3",
-    "minimist": "^1.2.3",
-    "node-fetch": "^2.6.1",
-    "serialize-javascript": "^3.1.0",
-    "set-value": "^2.0.1",
-    "webpack": "^5.24.2",
-    "xstate": "4.9.1",
-    "yargs-parser": "^13.1.2"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "repository": {
-    "url": "https://github.com/dchobarkar/portfolio",
-    "type": "git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "bugs": {
-    "url": "https://github.com/dchobarkar/portfolio/issues"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
-  "standard": {
-    "parser": "babel-eslint"
+  "lint-staged": {
+    "*.json": "prettier-package-json --write",
+    "*.{js,css,md}": "prettier --write"
   }
 }
