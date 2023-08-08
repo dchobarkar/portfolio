@@ -160,22 +160,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-omni-font-loader`,
-      options: {
-        mode: `async`,
-        /* Enable font loading listener to handle FOUT */
-        enableListener: true,
-        custom: [
-          {
-            /* Exact name of the font as defied in @font-face CSS rule */
-            name: [`TTNorms2`],
-            /* Path to the font CSS file inside the "static" folder with @font-face definition */
-            file: `/fonts/fonts.css`,
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-plugin-postcss`, // Implements PostCSS
       options: {
         postCssPlugins: [
