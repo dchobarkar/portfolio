@@ -1,9 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import '../App.css';
+import React from "react";
+import PropTypes from "prop-types";
+
+import "../App.css";
 
 function Header(props) {
   const { title } = props;
+
   return <div className="header">{title}</div>;
 }
 

@@ -1,7 +1,8 @@
-import React from 'react';
-import DarkModeToggle from 'react-dark-mode-toggle';
-import PropTypes from 'prop-types';
-import AppContext from '../AppContext';
+import React from "react";
+import DarkModeToggle from "react-dark-mode-toggle";
+import PropTypes from "prop-types";
+
+import AppContext from "../AppContext";
 
 function ThemeToggler(props) {
   const { onClick } = props;

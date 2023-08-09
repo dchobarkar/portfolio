@@ -1,10 +1,11 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import React, { useEffect, useState, useContext } from 'react';
-import { withRouter } from 'react-router';
-import { NavLink } from 'react-router-dom';
-import styled, { ThemeContext } from 'styled-components';
-import endpoints from '../constants/endpoints';
-import ThemeToggler from './ThemeToggler';
+import { Navbar, Nav, Container } from "react-bootstrap";
+import React, { useEffect, useState, useContext } from "react";
+import { withRouter } from "react-router";
+import { NavLink } from "react-router-dom";
+import styled, { ThemeContext } from "styled-components";
+
+import ThemeToggler from "./ThemeToggler";
+import endpoints from "../constants/endpoints";
 
 const styles = {
   logoStyle: {
@@ -38,12 +39,13 @@ const InternalNavLink = styled(NavLink)`
 
 const NavBar = () => {
   const theme = useContext(ThemeContext);
+
   const [data, setData] = useState(null);
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     fetch(endpoints.navbar, {
-      method: 'GET',
+      method: "GET",
     })
       .then((res) => res.json())
       .then((res) => setData(res))
@@ -74,15 +76,18 @@ const NavBar = () => {
             />
           </Navbar.Brand>
         )}
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => setExpanded(!expanded)}
         />
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" />
+
           <Nav>
-            {data
-              && data.sections?.map((section, index) => (section?.type === 'link' ? (
+            {data?.sections?.map((section, index) =>
+              section?.type === "link" ? (
                 <ExternalNavLink
                   key={section.title}
                   href={section.href}
@@ -106,11 +111,11 @@ const NavBar = () => {
                 >
                   {section.title}
                 </InternalNavLink>
-              )))}
+              )
+            )}
           </Nav>
-          <ThemeToggler
-            onClick={() => setExpanded(false)}
-          />
+
+          <ThemeToggler onClick={() => setExpanded(false)} />
         </Navbar.Collapse>
       </Container>
     </Navbar>
