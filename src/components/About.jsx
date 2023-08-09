@@ -54,7 +54,7 @@ function About(props) {
                 </Col>
 
                 <Col style={styles.introImageContainer}>
-                  <img src={data?.imageSource} alt="profile" />
+                  <img src={data?.imageSource} width="100%" alt="profile" />
                 </Col>
               </Row>
             </Fade>
