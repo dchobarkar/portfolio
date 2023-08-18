@@ -8,13 +8,15 @@ import endpoints from "../constants/endpoints";
 
 const styles = {
   nameStyle: {
-    fontSize: "5em",
+    width: "100%",
+    fontSize: "4.5em",
   },
   inlineChild: {
     display: "inline-block",
   },
   mainContainer: {
     height: "100%",
+    padding: "5%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

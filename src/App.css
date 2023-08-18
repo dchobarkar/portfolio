@@ -58,6 +58,7 @@
 }
 
 .section-content-container {
+  padding-bottom: 5%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -139,7 +140,7 @@ section.timeline-card-content div.card-description > p {
 }
 
 .header {
+  padding: 5% 0;
   font-size: 3em;
   font-weight: bold;
-  margin-bottom: 25px;
 }
