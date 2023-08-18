@@ -1,33 +1,34 @@
 {
-    "experiences": [
-        {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
-            "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
-            ],
-            "dateText": "06/20XX – Present"
-        },
-        {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
-            "workDescription": [
-                "Worked on abc."
-            ],
-            "dateText": "01/20XX – 05/20XX"
-        },
-        {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
-            "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
-            ],
-            "dateText": "09/20XX – 01/20YY"
-        }
-    ]
+  "experiences": [
+    {
+      "title": "Lead Web Developer",
+      "subtitle": "City Storage Systems",
+      "workType": "Contract",
+      "workDescription": [
+        "Responsible for all websites in APAC and EMEA region",
+        "Worked with various teams to provide best solution for business growth"
+      ],
+      "dateText": "03/2022 – Present"
+    },
+    {
+      "title": "Full Stack Developer",
+      "subtitle": "BPCL",
+      "workType": "Contract",
+      "workDescription": [
+        "Worked with client's management team to analyze and optimize then day to day information distribution system.",
+        "Provided software application engineering and maintenance for development lifecycle"
+      ],
+      "dateText": "01/2021 – 12/2021"
+    },
+    {
+      "title": "Full Stack Developer",
+      "subtitle": "BPCL",
+      "workType": "Contract",
+      "workDescription": [
+        "Worked with client's management team to examine and digitize then paper based data handling system.",
+        "Participated in requirements gathering to solidify prerequisites and determine best technical solution to meet business needs"
+      ],
+      "dateText": "01/2020 – 12/2021"
+    }
+  ]
 }
