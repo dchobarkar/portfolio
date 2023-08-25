@@ -1,116 +1,180 @@
 {
   "projects": [
     {
-      "image": "images/projects/portfolio-poster.png",
+      "image": "",
       "title": "Analytical System",
       "bodyText": "- Worked with client's management team to analyze and optimize then day to day information distribution system.\n -  Reviewed code, debugged problems, and corrected issues.\n - Discussed project progress with client, collected feedback on different stages and directly addressed concerns.\n - Provided software application engineering and maintenance for development lifecycle.",
       "links": [
         {
           "text": "GitHub",
-          "href": "https://github.com/dchobarkar/BPCL-Analytical-System-client"
+          "href": "https://github.com/dchobarkar/analytical-system-client"
         }
       ],
-      "tags": ["JavaScript", "React", "TypeScript", "NestJS", "PostgreSQL"]
+      "tags": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "React",
+        "NestJS",
+        "PostgreSQL"
+      ]
     },
     {
-      "image": "images/projects/caaring-poster.png",
-      "title": "Caaring -  Cab Share App",
-      "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
+      "image": "",
+      "title": "Digital System",
+      "bodyText": "- Worked with client's management team to examine and digitize then paper based data handling system.\n - Built a digital solution to replace client's daily data collection systems.\n - Facilitated the client by solving complex problems, building solution frameworks and leading initiatives.",
       "links": [
         {
           "text": "GitHub",
-          "href": "https://github.com/mayankagarwal09/Caaring"
+          "href": "https://github.com/dchobarkar/digital-system-client"
+        }
+      ],
+      "tags": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "React",
+        "NestJS",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "title": "Tic Tac Toe",
+      "bodyText": "- Tic Tac Toe game app based on react-native-cli.\n - A react-native-cli based game in which two players take turns in drawing either an ' O' or an ' X' in one square of a grid consisting of nine squares.\n - The winner is the first player to get three of the same symbols in a row.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/dchobarkar/tic-tac-toe"
+        }
+      ],
+      "tags": ["Metro", "Webapp", "React-native-cli"]
+    },
+    {
+      "image": "",
+      "title": "Refinery Data Tracker",
+      "bodyText": "- A react app to track and submit real time critical data across various locations in a google sheet.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/dchobarkar/refinery-data-tracker"
+        }
+      ],
+      "tags": ["JavaScript", "React", "CSS", "HTML"]
+    },
+    {
+      "title": "EdTech Platform",
+      "bodyText": "- A platform to bridge the gap between Teachers and Students.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/dchobarkar/edtech-platform-client"
+        }
+      ],
+      "tags": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "React",
+        "NestJS",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "title": "Wings 2019",
+      "bodyText": "- Official website of 2019 Technical Event of Government College of Engineering, Aurangabad.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/dchobarkar/wings-2019"
+        }
+      ],
+      "tags": ["JavaScript", "CSS", "HTML", "Bootstrap", "Express"]
+    },
+    {
+      "title": "Weather App",
+      "bodyText": "- A hybrid app to give weather forecast.\n - The app predicts the best day to sell an umbrella and a jacket.\n - It also gives advice on which days should you wear a hat.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/dchobarkar/weather-app"
+        }
+      ],
+      "tags": ["TypeScript", "React-Native", "Expo-cli"]
+    },
+    {
+      "title": "Gopalkar and Company",
+      "bodyText": "- Official website of Gopalkar & Company.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/dchobarkar/gopalkar-and-company"
         },
         {
           "text": "Live",
-          "href": "http://caaring.herokuapp.com"
+          "href": "https://dchobarkar.github.io/gopalkar-and-company/"
         }
       ],
-      "tags": [
-        "Python",
-        "Django",
-        "BootStrap",
-        "SendGrid",
-        "Heroku",
-        "Gunicorn",
-        "VIT"
-      ]
+      "tags": ["React", "JavaScript", "CSS", "HTML"]
     },
     {
-      "image": "images/projects/quiet-hours-poster.jpg",
-      "title": "Quiet Hours App",
-      "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
+      "title": "Typing Master",
+      "bodyText": "- A react app to master your typing skills.",
       "links": [
         {
           "text": "GitHub",
-          "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+          "href": "https://github.com/dchobarkar/typing-master"
+        },
+        {
+          "text": "Live",
+          "href": "https://dchobarkar.github.io/typing-master/"
         }
       ],
-      "tags": ["Java", "Android", "Alarm Manager", "VIT"]
+      "tags": ["React", "JavaScript", "CSS", "HTML"]
     },
     {
-      "title": "Secure Chat App",
-      "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
+      "title": "Portfolio Template",
+      "bodyText": "- A demo portfolio website.",
       "links": [
         {
           "text": "GitHub",
-          "href": "https://github.com/mayankagarwal09/SecureChatApp"
+          "href": "https://github.com/dchobarkar/portfolio-template"
+        },
+        {
+          "text": "Live",
+          "href": "https://dchobarkar.github.io/portfolio-template/"
         }
       ],
-      "tags": ["Java", "Android", "Firebase", "RSA"]
+      "tags": ["React", "Gatsby", "JavaScript", "CSS", "HTML"]
     },
     {
-      "title": "MVVM Sample App",
-      "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
+      "title": "Abhang Farms",
+      "bodyText": "- Marketing website of AbhangFarms polyhouse.",
       "links": [
         {
           "text": "GitHub",
-          "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
+          "href": "https://github.com/dchobarkar/abhang-farms"
+        },
+        {
+          "text": "Live",
+          "href": "https://abhangfarms.netlify.app/"
         }
       ],
-      "tags": [
-        "Kotlin",
-        "Android",
-        "MVVM",
-        "Room",
-        "Coroutines",
-        "Flow",
-        "Hilt-Dagger",
-        "NetworkBoundResource"
-      ]
+      "tags": ["React", "JavaScript", "CSS", "HTML"]
     },
     {
-      "title": "Feed List App",
-      "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
+      "title": "Site Underconstruction Template",
+      "bodyText": "- A template to show on your domain till the actual website is being built.",
       "links": [
         {
           "text": "GitHub",
-          "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-        }
-      ],
-      "tags": ["Kotlin", "Android", "MVVM", "Paging 3", "Coroutines", "Flow"]
-    },
-    {
-      "title": "Task Tracker",
-      "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-      "links": [
+          "href": "https://github.com/dchobarkar/site-underconstruction-template"
+        },
         {
-          "text": "GitHub",
-          "href": "https://github.com/mayankagarwal09/task-tracker-app"
+          "text": "Live",
+          "href": "https://dchobarkar.github.io/site-underconstruction-template/"
         }
       ],
-      "tags": ["TypeScript", "Angular 12", "JavaScript"]
-    },
-    {
-      "title": "Image Encryption/Decryption",
-      "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-      "links": [
-        {
-          "text": "GitHub",
-          "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-        }
-      ],
-      "tags": ["Python", "Django", "SDES", "Cryptography"]
+      "tags": ["JavaScript", "CSS", "HTML"]
     }
   ]
 }
