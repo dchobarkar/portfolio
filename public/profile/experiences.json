@@ -5,18 +5,24 @@
       "subtitle": "City Storage Systems",
       "workType": "Contract",
       "workDescription": [
-        "Responsible for all websites in APAC and EMEA region",
-        "Worked with various teams to provide best solution for business growth"
+        "Led the development and maintenance of websites across the APAC region, with additional support for EMEA region websites.",
+        "Utilized React, Gatsby, JavaScript, for front-end development and integrated WordPress and Prismic CMS for content management.",
+        "Specialized in converting intricate mockups into functional web components, ensuring responsive and user-friendly site interfaces.",
+        "Improved website performance and client engagement through strategic planning and optimization techniques.",
+        "Collaborated with global teams, showcasing adaptability and effective communication skills in a fast-paced startup environment."
       ],
-      "dateText": "03/2022 – Present"
+      "dateText": "03/2022 – 01/2024"
     },
     {
       "title": "Full Stack Developer",
       "subtitle": "BPCL",
       "workType": "Contract",
       "workDescription": [
-        "Worked with client's management team to analyze and optimize then day to day information distribution system.",
-        "Provided software application engineering and maintenance for development lifecycle"
+        "Developed a comprehensive analytical tool to visualize and analyze extensive plant data, enhancing decision-making processes.",
+        "Utilized React, NestJS, and PostgreSQL to create a robust full-stack solution that optimized day-to-day information distribution.",
+        "Enabled efficient code review, issue debugging, and problem resolution, significantly improving software reliability and performance.",
+        "Facilitated direct client interaction, collecting feedback for various project stages to ensure alignment with business objectives.",
+        "Contributed to the entire development lifecycle, demonstrating capabilities in both software application engineering and maintenance."
       ],
       "dateText": "01/2021 – 12/2021"
     },
@@ -25,8 +31,11 @@
       "subtitle": "BPCL",
       "workType": "Contract",
       "workDescription": [
-        "Worked with client's management team to examine and digitize then paper based data handling system.",
-        "Participated in requirements gathering to solidify prerequisites and determine best technical solution to meet business needs"
+        "Spearheaded the digital transformation of BPCL's paper-based data systems, creating an efficient web application for report management.",
+        "Employed React, NestJS, and PostgreSQL to build a full-stack digital solution, streamlining data handling processes.",
+        "Collaborated closely with the management team to analyze and digitize existing systems, enhancing operational efficiency.",
+        "Played a pivotal role in project planning, requirements gathering, and technical solution development.",
+        "Achieved a significant reduction in unchecked errors and operational costs through the implementation of automatic danger checks and data optimization."
       ],
       "dateText": "01/2020 – 12/2021"
     }
