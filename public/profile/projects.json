@@ -44,6 +44,32 @@
     },
     {
       "image": "",
+      "title": "Algorithmic Contest Platform",
+      "bodyText": "- Built a competitive programming platform using Next.js, allowing users to solve coding challenges and participate in algorithmic contests.\n- Integrated Judge0 API for automated code evaluation, ensuring real-time feedback for users during contests.\n- Employed Docker and Docker Compose for seamless deployment and scalability, with services like PostgreSQL and Redis for efficient data management.\n- Utilized Prisma ORM for robust database interactions and Tailwind CSS for a responsive, user-friendly interface.\n- Developed a scalable architecture supporting both individual problem-solving and live contests, similar to platforms like Codeforces.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/dchobarkar/algorithmic-contest-platform"
+        },
+        {
+          "text": "Live",
+          "href": "https://algorithmic-contest-platform.darshanwebdev.com/"
+        }
+      ],
+      "tags": [
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Prisma",
+        "Docker",
+        "Judge0",
+        "Redis"
+      ]
+    },
+
+    {
+      "image": "",
       "title": "Creati AI (SAAS AI Platform)",
       "bodyText": "- Developed a robust platform using Next.js that offers five distinct AI-driven services: Conversation, Code Generation, Image Generation, Video Generation, and Music Generation.\n - Integrated Clerk for user authentication and Stripe for payment processing, enabling users to register, access 5 free prompts, and upgrade to a Pro plan for unlimited access.\n - Utilized Prisma for efficient database management, Radix-UI for accessible UI components, Replicate for model deployment, and TailwindCSS for responsive design.\n - Implemented a scalable architecture that supports a freemium model, encouraging user engagement and providing a clear upgrade path for enhanced service access.",
       "links": [
