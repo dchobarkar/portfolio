@@ -67,6 +67,31 @@
         "Redis"
       ]
     },
+    {
+      "image": "",
+      "title": "Decentralized Centralized Exchange System",
+      "bodyText": "- Developed a hybrid cryptocurrency exchange platform using Next.js, allowing users to trade tokens on the Solana blockchain while utilizing centralized authentication.\n- Integrated Solana Web3.js and SPL Token for decentralized token management and Prisma ORM for centralized database interactions.\n- Implemented user authentication with NextAuth and Google Sign-In for secure access.\n- Utilized Tailwind CSS for a responsive design and Axios for real-time price data retrieval.\n- Built a scalable backend using PostgreSQL for user and trade data storage, ensuring a seamless user experience between decentralized and centralized components.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/dchobarkar/decentralized-centralized-exchange-system"
+        },
+        {
+          "text": "Live",
+          "href": "https://dec-cen-exc-sys.darshanwebdev.com/"
+        }
+      ],
+      "tags": [
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Prisma",
+        "Solana",
+        "Web3.js",
+        "NextAuth"
+      ]
+    },
 
     {
       "image": "",
