@@ -92,6 +92,22 @@
         "NextAuth"
       ]
     },
+    {
+      "image": "",
+      "title": "BPCL Geolocation Form",
+      "bodyText": "- Built a geolocation-enabled form for BPCL using Next.js to capture and submit device coordinates along with form data.\n- Integrated geolocation API to fetch latitude and longitude automatically during form submission.\n- Ensured responsive design using Tailwind CSS for seamless usage across devices.\n- Utilized Zod for robust form validation and error handling.\n- Developed with TypeScript for strong typing and scalability, and implemented AWS SDK for potential backend integration.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/dchobarkar/bpcl-geolocation-form"
+        },
+        {
+          "text": "Live",
+          "href": "https://bpcl-geolocation-form.vercel.app/"
+        }
+      ],
+      "tags": ["TypeScript", "Next.js", "Tailwind CSS", "Zod", "AWS SDK"]
+    },
 
     {
       "image": "",
